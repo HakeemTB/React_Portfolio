@@ -7,7 +7,7 @@ function AboutPage() {
       <h1>Full-stack developer.</h1>
       <div className="about-layout">
         <div className="about-copy">
-          <h2>Hi, I’m X.</h2>
+          <h2>Hi, I’m Hakeem.</h2>
           <p>
             I enjoy solving practical problems by building complete web
             applications, from responsive interfaces to server-side logic and

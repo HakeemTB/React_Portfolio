@@ -49,7 +49,7 @@ function HomePage() {
           <p className="eyebrow">FULL-STACK DEVELOPER</p>
           <h1>Building useful things for the web.</h1>
           <p className="hero-intro">
-            I’m X. I build web applications from the interface to the
+            I’m Hakeem. I build web applications from the interface to the
             server, with a focus on clear, dependable software.
           </p>
           <div className="hero-actions">

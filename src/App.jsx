@@ -6,8 +6,8 @@ import ContactPage from "./pages/contact.jsx";
 function Header() {
   return (
     <header className="site-header">
-      <NavLink className="wordmark" to="/" aria-label="Alex Morgan home">
-        Alex Morgan
+      <NavLink className="wordmark" to="/" aria-label="Hakeem home">
+        Hakeem
       </NavLink>
       <nav className="main-nav" aria-label="Main navigation">
         <NavLink to="/" end>
@@ -23,7 +23,7 @@ function Header() {
 function Footer() {
   return (
     <footer className="site-footer content-width">
-      <span>© {new Date().getFullYear()} Alex Morgan</span>
+      <span>© {new Date().getFullYear()} Hakeem</span>
       <span>Full-stack developer</span>
       <a href="mailto:hakeemtonyben@gmail.com">Say hello ↗</a>
     </footer>
@@ -44,4 +44,3 @@ export default function App() {
     </div>
   );
 }
-
