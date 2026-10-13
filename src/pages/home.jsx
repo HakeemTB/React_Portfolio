@@ -45,21 +45,30 @@ function HomePage() {
   return (
     <main>
       <section className="hero content-width">
-        <div className="hero-copy">
-          <p className="eyebrow">FULL-STACK DEVELOPER</p>
-          <h1>Building useful things for the web.</h1>
-          <p className="hero-intro">
-            I’m Hakeem. I build web applications from the interface to the
-            server, with a focus on clear, dependable software.
-          </p>
-          <div className="hero-actions">
-            <NavLink className="button button-primary" to="/contact">
-              Get in touch
-            </NavLink>
-            <a className="text-link" href="#selected-work">
-              View projects
-            </a>
+        <div className="hero-layout">
+          <div className="hero-copy">
+            <p className="eyebrow">FULL-STACK DEVELOPER</p>
+            <h1>Building useful things for the web.</h1>
+            <p className="hero-intro">
+              I’m Hakeem. I build web applications from the interface to the
+              server, with a focus on clear, dependable software.
+            </p>
+            <div className="hero-actions">
+              <NavLink className="button button-primary" to="/contact">
+                Get in touch
+              </NavLink>
+              <a className="text-link" href="#selected-work">
+                View projects
+              </a>
+            </div>
           </div>
+          <img
+            className="hero-portrait"
+            src="/images/hakeem-portrait.png"
+            alt="Illustrated portrait of Hakeem"
+            width="768"
+            height="768"
+          />
         </div>
       </section>
 

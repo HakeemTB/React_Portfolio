@@ -89,6 +89,26 @@ a:hover {
   padding-block: 112px 96px;
 }
 
+.hero-layout {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.hero-copy {
+  flex: 1;
+}
+
+.hero-portrait {
+  display: block;
+  width: min(36%, 240px);
+  aspect-ratio: 1;
+  flex: 0 0 auto;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
 .eyebrow {
   margin: 0 0 16px;
   color: var(--muted);
@@ -359,6 +379,16 @@ p {
 @media (max-width: 600px) {
   .hero {
     padding-block: 80px 68px;
+  }
+
+  .hero-layout {
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    gap: 28px;
+  }
+
+  .hero-portrait {
+    width: min(52vw, 200px);
   }
 
   .skills-section {
