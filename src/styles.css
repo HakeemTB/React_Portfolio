@@ -102,10 +102,10 @@ a:hover {
 
 .hero-portrait {
   display: block;
-  width: min(36%, 240px);
+  width: clamp(220px, 40%, 300px);
   aspect-ratio: 1;
   flex: 0 0 auto;
-  border-radius: 50%;
+  border-radius: 16px;
   object-fit: cover;
 }
 
@@ -388,7 +388,8 @@ p {
   }
 
   .hero-portrait {
-    width: min(52vw, 200px);
+    width: min(76vw, 280px);
+    align-self: center;
   }
 
   .skills-section {
