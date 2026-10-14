@@ -5,7 +5,7 @@ import { NavLink } from "react-router-dom";
 const projects = [
   {
     number: "01",
-    name: "Sunday Supply",
+    name: "Let's Commerce",
     type: "E-commerce · 2025",
     description: "A calmer kind of everyday shopping.",
   },
