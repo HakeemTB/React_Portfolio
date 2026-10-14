@@ -1,12 +1,19 @@
 import { useState } from "react";
 
 function ContactPage() {
-  const [submitted, setSubmitted] = useState(false);
+  const [status, setStatus] = useState("");
 
   function handleSubmit(event) {
     event.preventDefault();
-    setSubmitted(true);
-    event.currentTarget.reset();
+    const formData = new FormData(event.currentTarget);
+    const name = String(formData.get("name"));
+    const email = String(formData.get("email"));
+    const message = String(formData.get("message"));
+    const subject = `Portfolio inquiry from ${name}`;
+    const body = `Name: ${name}\nEmail: ${email}\n\n${message}`;
+
+    window.location.href = `mailto:hakeemtonyben@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    setStatus("Your email app should open with your message ready. Send it there to complete delivery.");
   }
 
   return (
@@ -33,12 +40,10 @@ function ContactPage() {
           <button className="button button-primary submit-button" type="submit">
             Send your note <span aria-hidden="true">↗</span>
           </button>
-          {submitted && (
-            <p className="form-success" role="status">
-              This demo form does not send messages yet. Please use the email link.
-            </p>
-          )}
-          <p className="form-disclaimer">Demo form — connect it to a form service to receive submissions.</p>
+          {status && <p className="form-status" role="status">{status}</p>}
+          <p className="form-disclaimer">
+            Submitting opens your default email app; the message is sent when you press Send there.
+          </p>
         </form>
       </div>
     </main>

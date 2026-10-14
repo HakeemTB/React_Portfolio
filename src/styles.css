@@ -353,7 +353,7 @@ p {
   resize: vertical;
 }
 
-.form-success,
+.form-status,
 .form-disclaimer {
   margin: 12px 0 0;
   color: var(--muted);
