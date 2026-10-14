@@ -102,11 +102,12 @@ a:hover {
 
 .hero-portrait {
   display: block;
-  width: clamp(220px, 40%, 300px);
-  aspect-ratio: 1;
+  width: clamp(280px, 46%, 380px);
+  aspect-ratio: 4 / 3;
   flex: 0 0 auto;
   border-radius: 16px;
   object-fit: cover;
+  object-position: center 35%;
 }
 
 .eyebrow {
@@ -388,7 +389,7 @@ p {
   }
 
   .hero-portrait {
-    width: min(76vw, 280px);
+    width: min(88vw, 360px);
     align-self: center;
   }
 
