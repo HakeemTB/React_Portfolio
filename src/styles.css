@@ -389,7 +389,8 @@ p {
   }
 
   .hero-portrait {
-    width: min(72vw, 260px);
+    width: min(72vw, 500px);
+    height: auto;
     align-self: center;
   }
 
