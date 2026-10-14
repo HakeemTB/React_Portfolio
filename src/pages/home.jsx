@@ -66,8 +66,6 @@ function HomePage() {
             className="hero-portrait"
             src="/images/hakeem-portrait.png"
             alt="Illustrated portrait of Hakeem"
-            width="768"
-            height="768"
           />
         </div>
       </section>

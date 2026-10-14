@@ -19,7 +19,6 @@ html {
 }
 
 body {
-  min-width: 320px;
   margin: 0;
   background: #fff;
   color: var(--text);
@@ -103,11 +102,12 @@ a:hover {
 .hero-portrait {
   display: block;
   width: clamp(200px, 34%, 280px);
-  aspect-ratio: 1;
+  height: auto;
+  aspect-ratio: 4 / 5;
   flex: 0 0 auto;
-  border-radius: 50%;
+  border-radius: 12px;
   object-fit: cover;
-  object-position: center 35%;
+  object-position: center 30%;
 }
 
 .eyebrow {
@@ -377,6 +377,18 @@ p {
   font-size: 12px;
 }
 
+@media (max-width: 720px) {
+  .hero-layout {
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 28px;
+  }
+
+  .hero-portrait {
+    width: min(72vw, 280px);
+  }
+}
+
 @media (max-width: 600px) {
   .hero {
     padding-block: 80px 68px;
@@ -389,8 +401,7 @@ p {
   }
 
   .hero-portrait {
-    width: min(72vw, 500px);
-    height: auto;
+    width: min(72vw, 280px);
     align-self: center;
   }
 
