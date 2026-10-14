@@ -102,8 +102,8 @@ a:hover {
 
 .hero-portrait {
   display: block;
-  width: clamp(280px, 46%, 380px);
-  aspect-ratio: 4 / 3;
+  width: clamp(200px, 34%, 280px);
+  aspect-ratio: 5 / 4;
   flex: 0 0 auto;
   border-radius: 16px;
   object-fit: cover;
@@ -389,7 +389,7 @@ p {
   }
 
   .hero-portrait {
-    width: min(88vw, 360px);
+    width: min(72vw, 260px);
     align-self: center;
   }
 
